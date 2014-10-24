@@ -1,6 +1,8 @@
 require 'redmine'
 
 require_dependency "redmine_fixredirects/patches/app/controllers/attachments_controller"
+require_dependency "redmine_fixredirects/patches/app/controllers/context_menus_controller"
+require_dependency "redmine_fixredirects/patches/app/helpers/application_helper"
 
 Redmine::Plugin.register :redmine_fixredirects do
 	name 'Redirects fixing plugin'
